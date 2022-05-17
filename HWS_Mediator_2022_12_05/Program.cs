@@ -17,7 +17,7 @@ namespace HWS_Mediator_2022_12_05
             };
             faceGroup.Register(members);
 
-            members.ToList().ForEach(u => u.Send($"<{u.NickName}>: Hello everybody my name is {u.FirstName} {u.LastName}"));
+            members.ToList().ForEach(u => u.Publish($"<{u.NickName}>: Hello everybody my name is {u.FirstName} {u.LastName}"));
         }
     }
 }

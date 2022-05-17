@@ -19,7 +19,7 @@ namespace HWS_Mediator_2022_12_05
                 members.Add(user);
             }
         }
-        public void SendMessage(string message, IMember user)
+        public void PublishMessage(string message, IMember user)
         {
             members.ForEach(u => { if (u != user) u.Recieve(message); });
             Console.WriteLine("\n");

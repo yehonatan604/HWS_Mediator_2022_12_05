@@ -11,7 +11,7 @@ namespace HWS_Mediator_2022_12_05
         string? FirstName { get; set; }
         string? LastName { get; set; }
         string? NickName { get; set; }
-        void Send(string msg);
+        void Publish(string msg);
         void Recieve(string msg);
     }
 }

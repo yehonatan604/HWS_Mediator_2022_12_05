@@ -28,10 +28,10 @@ namespace HWS_Mediator_2022_12_05
         {
             Console.WriteLine($"{NickName} recived messege: {msg}"); ;
         }
-        public void Send(string msg)
+        public void Publish(string msg)
         {
             Console.WriteLine($">>>{NickName} sending messege: {msg}\n"); ;
-            _mediator?.SendMessage(msg, this);
+            _mediator?.PublishMessage(msg, this);
         }
     }
 }
